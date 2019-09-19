@@ -154,6 +154,7 @@ and (max-width: 820px){
         color: lightblue;
         width: 100px !important;
         height: 100px !important;
+        scroll-behavior: smooth;
     }
 
     /* PROJETOS */

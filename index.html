@@ -13,38 +13,20 @@
     <!-- Font awesome & jQuery-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    // Smooth SCROLL ANIMATION
-    $(document).ready(function(){
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash;
-
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 1000, function(){
-
-              window.location.hash = hash;
-            });
-          }
-        });
-      });
-      </script>
 </head>
 <body>
     <!-- HEADER -->
     <header id="top">
         <!-- Texto showcase-->
         <section class="showcase">
-            <div class="container">
-                <h1>Rafael Tonon</h1>
-                <p>Estudante Front-End</p>
-                <div class="container-b">
+            
+                <h1 class="typeW kb-cursor">Rafael Tonon</h1>
+                
+                <p class="typeW">Estudante Front-End</p>
+               <!-- <div class="container-b">
                         <a href="#projetos"><i class="fas fa-angle-down fa-2x"></i></a>
-                </div>
-            </div>
+                </div>-->
+            
         </section>
     </header>
 
@@ -55,7 +37,7 @@
 
             <!-- Área acima dos projetos -->
             <div class="row">
-                <h1>Projetos</h1>
+                <h2>Projetos</h2>
             </div>
 
             <!-- Primeiro projeto -->
@@ -65,8 +47,8 @@
                     <p>Objetivo do projeto era treinar meus conhecimentos tentando reproduzir o mais igual possivel o template "Conquer".</p>
                 </div>
                 <div class="box-img-1">
-                    <a class="desktop" href="https://rtonon.github.io/First-Project/" target="_blank"><img src="img/conquer-clone.png" alt=""></a>
-                    <a class="smart" href="https://rtonon.github.io/First-Project/" target="_blank"><img src="img/conquer-smart.png" alt=""></a>
+                    <a class="desktop" href="https://rtonon.github.io/First-Project/" target="_blank"><img src="img/conquer-clone.png" alt="Imagem da tela inicial do clone conquer"></a>
+                    <a class="smart" href="https://rtonon.github.io/First-Project/" target="_blank"><img src="img/conquer-smart.png" alt="Imagem da tela inicial do clone conquer celular"></a>
                 </div>
             </section>
 
@@ -77,8 +59,8 @@
                     <p>Continuando no mesmo padrão do outro site, desta vez com a página inicial do Google</p>
                 </div>
                 <div class="box-img-2">
-                    <a class="desktop" href="https://rtonon.github.io/Google-clone/" target="_blank"><img src="img/google-clone.png" alt=""></a>
-                    <a class="smart" href="https://rtonon.github.io/Google-clone/" target="_blank"><img src="img/google-smart.png" alt=""></a>
+                    <a class="desktop" href="https://rtonon.github.io/Google-clone/" target="_blank"><img src="img/google-clone.png" alt="Imagem da tela inicial do clone google"></a>
+                    <a class="smart" href="https://rtonon.github.io/Google-clone/" target="_blank"><img src="img/google-smart.png" alt="Imagem da tela inicial do clone google celular"></a>
                 </div>
             </section>
 
@@ -89,8 +71,8 @@
                     <p>Pequeno conversor que fiz para testar meus conhecimentos em javascript e css linear gradient.</p>
                 </div>
                 <div class="box-img-1">
-                    <a class="desktop" href="https://rtonon.github.io/Conversor/" target="_blank"><img src="img/conversor.jpg" alt=""></a>
-                    <a class="smart" href="https://rtonon.github.io/Conversor/" target="_blank"><img src="img/conversor.jpg" alt=""></a>
+                    <a class="desktop" href="https://rtonon.github.io/Conversor/" target="_blank"><img src="img/conversor.jpg" alt="Imagem da tela inicial do conversor"></a>
+                    <a class="smart" href="https://rtonon.github.io/Conversor/" target="_blank"><img src="img/conversor.jpg" alt="Imagem da tela inicial do conversor celular"></a>
                 </div>
             </section>
         </section>
@@ -98,7 +80,7 @@
         <!-- Sobre mim -->
         <section id="sobre">
             <div class="about">
-                <h1>Sobre</h1>
+                <h2>Sobre</h2>
             </div>
 
 
@@ -120,21 +102,22 @@
         <!-- Lista responsiva -->
         <div class="flist">
             <ul class="desktop">
-                <li><a href="mailto:rtonon96@hotmail.com"><i class="fas fa-envelope fa-4x"></i></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100003062588724" target="_blank"><i class="fab fa-facebook-square fa-4x"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/rafael-silva-51a32b122/" target="_blank"><i class="fab fa-linkedin fa-4x"></i></a></li>
-                <li><a href="https://github.com/Lokhvir" target="_blank"><i class="fab fa-github-square fa-4x"></i></a></li>
+                <li><a href="mailto:rtonon96@gmail.com"><i class="fas fa-envelope fa-4x"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100003062588724"><i class="fab fa-facebook-square fa-4x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rafael-silva-51a32b122/"><i class="fab fa-linkedin fa-4x"></i></a></li>
+                <li><a href="https://github.com/rafael-tonon"><i class="fab fa-github-square fa-4x"></i></a></li>
             </ul>
             <ul class="smart">
                 <li><a href="mailto:rtonon96@gmail.com"><i class="fas fa-envelope fa-4x"></i></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100003062588724" target="_blank"><i class="fab fa-facebook-square fa-4x"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100003062588724"><i class="fab fa-facebook-square fa-4x"></i></a></li>
             </ul>
             <ul class="smart">
-                <li><a href="https://www.linkedin.com/in/rafael-silva-51a32b122/" target="_blank"><i class="fab fa-linkedin fa-4x"></i></a></li>
-                <li><a href="https://github.com/Lokhvir" target="_blank"><i class="fab fa-github-square fa-4x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rafael-silva-51a32b122/"><i class="fab fa-linkedin fa-4x"></i></a></li>
+                <li><a href="https://github.com/rafael-tonon"><i class="fab fa-github-square fa-4x"></i></a></li>
             </ul>
         </div>
-        <p>Rafael Tonon, 2018</p>
+        <p>Desenvolvido por Rafael Tonon da Silva 2019</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
