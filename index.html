@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Tonon | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Ubuntu" rel="stylesheet">
 
-    <!-- Font awesome & jQuery-->
+    <!-- Font awesome icones-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -22,75 +21,81 @@
             
                 <h1 class="typeW kb-cursor">Rafael Tonon</h1>
                 
-                <p class="typeW">Estudante Front-End</p>
-               <!-- <div class="container-b">
-                        <a href="#projetos"><i class="fas fa-angle-down fa-2x"></i></a>
-                </div>-->
+                <p class="typeW b-slider">Estudante Front-End</p>
+                <div class="container-b">
+                    <a href="#main"><i class="fas fa-angle-down fa-2x"></i></a>
+                </div>
             
         </section>
     </header>
 
-    <!-- MAIN -->
-    <main>
-        <!-- Seção Projetos -->
-        <section id="projetos">
 
-            <!-- Área acima dos projetos -->
-            <div class="row">
-                <h2>Projetos</h2>
-            </div>
+    <!-- Seção Projetos -->
+    <main id="main">
+            <h2>Projetos</h2>
 
             <!-- Primeiro projeto -->
-            <section class="box box-border">
-                <div class="box-1">
-                    <h3>Conquer Clone</h3>
-                    <p>Objetivo do projeto era treinar meus conhecimentos tentando reproduzir o mais igual possivel o template "Conquer".</p>
+            <section class="projetos box-border">
+                <!-- A box-1 faz o conteudo ir pra esquerda-->
+                <div class="box">
+                    <h3>Template Clone</h3>
+                    <p>Objetivo do projeto era treinar meus conhecimentos tentando imitar o layout do template conquer sem olhar o código fonte.
+                        <br>
+                        Neste projeto aprendi mais sobre sobre CSS, efeito parallax, formuários alinhamento de elementos com floats.
+                        <br>Tecnologias: HTML5, CSS3, jQuery.
+                    </p>
                 </div>
-                <div class="box-img-1">
-                    <a class="desktop" href="https://rtonon.github.io/First-Project/" target="_blank"><img src="img/conquer-clone.png" alt="Imagem da tela inicial do clone conquer"></a>
-                    <a class="smart" href="https://rtonon.github.io/First-Project/" target="_blank"><img src="img/conquer-smart.png" alt="Imagem da tela inicial do clone conquer celular"></a>
+                <!-- A box-img-1 faz a imagem ir pra direita-->
+                <div class="box-img">
+                    <!--<a class="desktop" href="https://rafael-tonon.github.io/conquer/" target="_blank"><img src="img/conquer-clone.png" alt="Imagem da tela inicial do clone conquer"></a>-->
+                    <a class="smart" href="https://rafael-tonon.github.io/conquer/" target="_blank"><img src="img/conquer-smart.png" alt="Imagem da tela inicial do clone conquer celular"></a>
                 </div>
             </section>
 
             <!-- Segundo projeto -->
-            <section class="box box-border">
-                <div class="box-2">
+            <section class="projetos row-reverse box-border">
+                <!-- A box-2 faz o conteudo ir pra esquerda-->
+                <div class="box">
                     <h3>Google Clone</h3>
-                    <p>Continuando no mesmo padrão do outro site, desta vez com a página inicial do Google</p>
+                    <p>Projeto bem simples, tentei fazer o mesmo que fiz no projeto conquer com o objetivo de aprender mais. 
+                        <br>Aprendi mais sobre CSS, conceitos de box shadow e como utilizar icones.
+                    <br>Tecnologias: HTML5, CSS3</p>
                 </div>
-                <div class="box-img-2">
-                    <a class="desktop" href="https://rtonon.github.io/Google-clone/" target="_blank"><img src="img/google-clone.png" alt="Imagem da tela inicial do clone google"></a>
-                    <a class="smart" href="https://rtonon.github.io/Google-clone/" target="_blank"><img src="img/google-smart.png" alt="Imagem da tela inicial do clone google celular"></a>
+                <!-- A box-img-2 faz a imagem ir pra esquerda-->
+                <div class="box-img">
+                    <!--<a class="desktop" href="https://rafael-tonon.github.io/google-clone/" target="_blank"><img src="img/google-clone.png" alt="Imagem da tela inicial do clone google"></a>-->
+                    <a class="smart" href="https://rafael-tonon.github.io/google-clone/" target="_blank"><img src="img/google-smart.png" alt="Imagem da tela inicial do clone google celular"></a>
                 </div>
             </section>
 
             <!-- Terceiro projeto -->
-            <section class="box">
-                <div class="box-1">
+            <section class="projetos border-none">
+                <div class="box">
                     <h3>Conversor de Temperatura</h3>
-                    <p>Pequeno conversor que fiz para testar meus conhecimentos em javascript e css linear gradient.</p>
+                    <p>Pequeno conversor que fiz para aprender um pouco sobre javascript e css linear gradient.
+                        <br>Tecnologias: HTML5, CSS3, JavaScript</p>
                 </div>
-                <div class="box-img-1">
-                    <a class="desktop" href="https://rtonon.github.io/Conversor/" target="_blank"><img src="img/conversor.jpg" alt="Imagem da tela inicial do conversor"></a>
+                <div class="box-img">
+                    <!--<a class="desktop" href="https://rtonon.github.io/Conversor/" target="_blank"><img src="img/conversor.jpg" alt="Imagem da tela inicial do conversor"></a>-->
                     <a class="smart" href="https://rtonon.github.io/Conversor/" target="_blank"><img src="img/conversor.jpg" alt="Imagem da tela inicial do conversor celular"></a>
                 </div>
+            </section>
+            <section class="soon">
+                <p>Mais projetos em breve :)</p>
             </section>
         </section>
 
         <!-- Sobre mim -->
         <section id="sobre">
-            <div class="about">
-                <h2>Sobre</h2>
-            </div>
-
-
-            <!-- Classe "content" usada para fazer os colchetes em volta do parágrafo -->
+            <h2>Sobre</h2>
+            
+            <!-- Classe "content" usada para fazer as bordas em volta do parágrafo -->
             <div class="content">
-                <p class="p-left">Atualmente estudo Sistemas para Internet na ULBRA. Planejo me especializar na área Front-End. <br>Tenho bons conhecimentos em HTML, CSS, Bootstrap, SCSS e estou aprendendo JavaScript e jQuery.</p>
-                <p class="p-right">Em breve pretendo estudar uma das tecnologias React/Angular/Vue.</p>
+                <p>Meu nome é Rafael, tenho 23 anos e atualmente estou cursando Sistemas para Internet na ULBRA. Planejo me especializar na área Front-End. <br>Tenho bons conhecimentos em HTML5, CSS3, Lógica de Programação e o básico de JavaScript, SQL e SCSS.</p>
+                <p>Também conheço um pouco sobre Bootstrap 4 e edição de imagens com GIMP. Após estar confortável com JS pretendo estudar uma das tecnologias React/Angular/Vue.</p>
             </div>
-        </section>
     </main>
+
 
     <!-- FOOTER -->
     <footer>
@@ -100,24 +105,16 @@
         </div>
 
         <!-- Lista responsiva -->
-        <div class="flist">
-            <ul class="desktop">
+        <div class="footer-list">
+            <ul>
                 <li><a href="mailto:rtonon96@gmail.com"><i class="fas fa-envelope fa-4x"></i></a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100003062588724"><i class="fab fa-facebook-square fa-4x"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/rafael-silva-51a32b122/"><i class="fab fa-linkedin fa-4x"></i></a></li>
-                <li><a href="https://github.com/rafael-tonon"><i class="fab fa-github-square fa-4x"></i></a></li>
-            </ul>
-            <ul class="smart">
-                <li><a href="mailto:rtonon96@gmail.com"><i class="fas fa-envelope fa-4x"></i></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100003062588724"><i class="fab fa-facebook-square fa-4x"></i></a></li>
-            </ul>
-            <ul class="smart">
-                <li><a href="https://www.linkedin.com/in/rafael-silva-51a32b122/"><i class="fab fa-linkedin fa-4x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rafael-tonon/"><i class="fab fa-linkedin fa-4x"></i></a></li>
                 <li><a href="https://github.com/rafael-tonon"><i class="fab fa-github-square fa-4x"></i></a></li>
             </ul>
         </div>
-        <p>Desenvolvido por Rafael Tonon da Silva 2019</p>
+        <p>Desenvolvido por Rafael Tonon da Silva, 2019</p>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/typewriter.js"></script>
 </body>
 </html>
