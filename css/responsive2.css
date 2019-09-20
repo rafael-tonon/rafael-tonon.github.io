@@ -270,24 +270,10 @@ footer li {
 }
 
 
-/* FOOTER ICONS */
-.top-btn {
-    padding: 30px 0 30px 8px;
-}
-
-.fa-angle-up {
-    color: lightblue;
-}
-
 .fa-angle-up:hover {
     color: #fff;
     transition: 0.5s;
     transform: scale(1.2);
-}
-
-/* Contact icons */
-.fa-envelope {
-    color: lightblue;
 }
 
 .fa-envelope:hover {
@@ -296,18 +282,10 @@ footer li {
     transform: scale(1.2);
 }
 
-.fa-facebook-square {
-    color: lightblue;
-}
-
 .fa-facebook-square:hover {
     color: white;
     transition: 0.5s;
     transform: scale(1.2);
-}
-
-.fa-linkedin {
-    color: lightblue;
 }
 
 .fa-linkedin:hover {
@@ -316,9 +294,6 @@ footer li {
     transform: scale(1.2);
 }
 
-.fa-github-square {
-    color: lightblue;
-}
 
 .fa-github-square:hover {
     color: white;

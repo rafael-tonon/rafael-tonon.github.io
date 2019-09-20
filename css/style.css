@@ -1,3 +1,6 @@
+html {
+    font-size: 16px;
+}
 :root {
     --primaryColor-: #F8BA00;
 }
@@ -74,7 +77,8 @@ header {
 }
 
 .showcase > p {
-    padding-left: .5em;
+    
+    padding-left: .7em;
 }
 
 /* Animação Cursor Keyboard TypeWriter */
@@ -119,7 +123,7 @@ header {
 /* Main area */
 main {
     padding-top: 3.75em;
-    background: linear-gradient(95deg, #d84242, #ED5929, #F7941D);
+    background: linear-gradient(95deg, #d84242, #ED5929, rgb(247, 116, 29));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,10 +157,17 @@ main > h2 {
 .projetos img {
     border-radius: 10px;
     box-shadow: -1px 2px 4px rgb(83, 83, 83);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /* box*/
 .box {
     padding: 1em 0;
+}
+
+.box-img {
+    height: 280px;
 }
 
 .border-none {
@@ -177,7 +188,7 @@ main > h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 1.5em;
+    padding: 5em 1.5em; 
 }
 
 #sobre h2 {
@@ -190,23 +201,23 @@ main > h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: .8em;
+    padding: 1em;
     text-align: justify;
 }
 
 .content p:last-child {
     margin-top: 1em;
-    
 }
 
 .content::before {
     content: " ";
     position: absolute;
-    bottom: 75%;
+    bottom: 0;
     left: 0;
+    right: 75%;
     top: 0;
-    width: 97.5%;
-    border-right: 6px solid rgb(238, 202, 0);
+    width: 50%;
+    height: 50%;
     border-left: 6px solid rgb(238, 202, 0);
     border-top: 6px solid rgb(238, 202, 0);
     border-radius: 5px;
@@ -216,12 +227,15 @@ main > h2 {
     content: " ";
     position: absolute;
     bottom: 0;
-    left: 0;
-    top: 75%;
-    width: 97.5%;
+    right: 0;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+
     border-bottom: 6px solid rgb(238, 202, 0);
     border-right: 6px solid rgb(238, 202, 0);
-    border-left: 6px solid rgb(238, 202, 0);
+
     border-radius: 5px;
 }
 
