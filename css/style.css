@@ -52,22 +52,25 @@ header {
         url(../img/bg-6.jpg) fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
 /* Showcase intro */
 .showcase {
-    width: 320px;
     text-shadow: 2px 4px 6px #000;
     color: var(--primaryColor-);
     font-size: 1.75rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 7;
 }
 
 /* Animação Cursor Keyboard TypeWriter */
@@ -96,7 +99,13 @@ header {
 }
 
 .container-b {
-    margin-top: 160px;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 11;
+    align-self: center;
+    justify-self: center;
+    font-size: 2rem;
 }
 
 .fa-angle-down {
@@ -106,7 +115,7 @@ header {
 /* Main area */
 main {
     padding-top: 3.75em;
-    background: #d84242;
+    background: linear-gradient(100deg, #d84242, #ED5929, #F7941D);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,11 +188,12 @@ main > h2 {
     flex-direction: column;
     justify-content: space-between;
     padding: .8em;
-    height: 450px;
+    text-align: justify;
 }
 
-.content p {
-    text-align: justify;
+.content p:last-child {
+    margin-top: 1em;
+    
 }
 
 .content::before {
@@ -192,7 +202,7 @@ main > h2 {
     bottom: 75%;
     left: 0;
     top: 0;
-    width: 95%;
+    width: 97.5%;
     border-right: 6px solid rgb(238, 202, 0);
     border-left: 6px solid rgb(238, 202, 0);
     border-top: 6px solid rgb(238, 202, 0);
@@ -205,7 +215,7 @@ main > h2 {
     bottom: 0;
     left: 0;
     top: 75%;
-    width: 95%;
+    width: 97.5%;
     border-bottom: 6px solid rgb(238, 202, 0);
     border-right: 6px solid rgb(238, 202, 0);
     border-left: 6px solid rgb(238, 202, 0);
