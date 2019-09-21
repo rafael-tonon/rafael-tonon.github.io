@@ -51,7 +51,7 @@ function scrollEffect(){
     let hidden = document.getElementsByClassName("hidden");
 
     //só ativar este script em aparelhos com width maiores. Pesquisar para ver se tem como detectar qual o tipo de aparelho para melhor customização de performance
-    if (screen.width > 1400){
+    if (screen.width > 1200){
 
         //requisita para o browser que vc quer fazer uma coisa quando ele foi pintar a pagina
         let requestAnimationFrame = window.requestAnimationFrame(scrollEffect);
