@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Tonon | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Manjari|Montserrat:500&display=swap" rel="stylesheet">
 
     <!-- Font awesome icones-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
@@ -18,25 +19,21 @@
     <header id="top">
         <!-- Texto showcase-->
         <section class="showcase">
-            
-                <h1 class="typeW kb-cursor">Rafael Tonon</h1>
-                
-                <p class="typeW b-slider">Web Dev</p>
-   
-            
+            <h1 class="typeW kb-cursor"></h1>    
+            <p class="typeW b-slider"></p>
         </section>
         <div class="container-b">
-                <a href="#main"><i class="fas fa-angle-down fa-2x"></i></a>
-            </div>
+            <a href="#main"><i class="fas fa-angle-down fa-2x"></i></a>
+        </div>
     </header>
 
 
     <!-- Seção Projetos -->
     <main id="main">
-            <h2>Projetos</h2>
+            <h2 class="hidden">Projetos</h2>
 
             <!-- Primeiro projeto -->
-            <section class="projetos box-border">
+            <section class="hidden projetos">
                 <!-- A box-1 faz o conteudo ir pra esquerda-->
                 <div class="box">
                     <h3>Template Clone</h3>
@@ -53,7 +50,7 @@
             </section>
 
             <!-- Segundo projeto -->
-            <section class="projetos row-reverse box-border">
+            <section class="projetos row-reverse hidden">
                 <!-- A box-2 faz o conteudo ir pra esquerda-->
                 <div class="box">
                     <h3>Google Clone</h3>
@@ -68,17 +65,17 @@
             </section>
 
             <!-- Terceiro projeto -->
-            <section class="projetos border-none">
+            <section class="hidden projetos border-none">
                 <div class="box">
                     <h3>Conversor de Temperatura</h3>
                     <p>Pequeno conversor que fiz para aprender um pouco sobre javascript e css linear gradient.
                         <br>Tecnologias: HTML5, CSS3, JavaScript</p>
                 </div>
                 <div class="box-img">
-                    <a href="https://rtonon.github.io/Conversor/" target="_blank"><img src="img/conversor.jpg" alt="Imagem da tela inicial do conversor"></a>
+                    <a href="https://rafael-tonon.github.io/conversor/" target="_blank"><img src="img/conversor.jpg" alt="Imagem da tela inicial do conversor"></a>
                 </div>
             </section>
-            <section class="soon">
+            <section class="hidden projetos border-none">
                 <p>Mais projetos em breve :)</p>
             </section>
         </section>
@@ -113,6 +110,6 @@
         </div>
         <p>Desenvolvido por Rafael Tonon da Silva, 2019</p>
     </footer>
-    <script src="js/typewriter.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

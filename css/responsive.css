@@ -134,10 +134,30 @@
             }
 
             /* Laptop large screen */
-            @media (min-width: 1400px){
+            @media (min-width: 1400px){              
+                .hidden {
+                    opacity: 0;
+                }
+                
+                main {
+                    min-height: 500px;
+                }
+                .main-title {
+                    display: block;
+                    animation: slide-title 1s ease-out forwards;
+                }
+                                
                 .projetos {
+                    display: none;
+                }
+
+                .scroll-effect {
+                    display: flex;
                     flex-direction: row;
                     align-items: flex-start;
+                    padding-bottom: 5em;
+                    border: none;
+                    animation: slideIn 1s ease-out forwards;
                 }
          
                 .box {
@@ -153,6 +173,12 @@
                     display: flex;
                     flex-direction: row-reverse;
                 }
+
+                .soon {
+                    align-items: center;
+                    justify-content: center;
+                }
+  
 
                 #sobre {
                     padding: 0;

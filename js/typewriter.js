@@ -1,5 +1,7 @@
 //chama a função ao carregar a página
-window.onload = typeWriter;
+window.onload() = function() {
+    typeWriter();
+};
 
 //função para simular digitação no começo da página
 function typeWriter(){
@@ -9,16 +11,10 @@ function typeWriter(){
     //x e y = valores auxiliares para arrays e loops
     let x=0, y=0;
 
-    /*Apagar os valores iniciais do innerHTML. Deixei os valores no arquivo original caso 
-    a pessoa tenha plugin para bloquear javascript. Pra garantir que o conteúdo original apareça, mesmo que sem o efeito typewriter*/
-    typeW[0].innerHTML = "";
-    typeW[1].innerHTML = "";
-
     //declaração dos novos valores que serão substituidos no innerHTML
     let name = "Rafael Tonon";
     //let title = "Estudante Front-End";
     let title = "Web Dev";
-
 
     // setInterval para escrever as letras em um intervalo fixo
     let typing = setInterval(e => {
@@ -43,3 +39,14 @@ function typeWriter(){
         }
     }, 150);
 }
+
+function slideInEffect(){
+    let onScroll = setInterval(e => {
+        let scrollPosition = window.scrollY;
+    
+        
+
+        console.log(scrollPosition);
+    }, 12300);
+
+};

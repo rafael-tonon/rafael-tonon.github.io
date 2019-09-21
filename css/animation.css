@@ -1,0 +1,29 @@
+@keyframes type-cursor {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ @keyframes slideIn {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes slide-title {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 30%;
+    }
+}
