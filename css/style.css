@@ -5,7 +5,6 @@ html {
     --primaryColor-: #F8BA00;
 }
 
-
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -53,7 +52,7 @@ header {
     font-family: 'Manjari', monospace;
     background:
         url(../img/bg-tsp.png),
-        url(../img/bg-6.jpg);
+        url(../img/bg-9.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -174,7 +173,7 @@ main > h2 {
     color: #fff;
     text-shadow: 2px 2px 4px #000;
     overflow-x: hidden;
-    background-image: url('../img/bg-2.jpg');
+    background-image: url('../img/bg-10.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
