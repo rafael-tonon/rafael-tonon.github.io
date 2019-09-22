@@ -58,14 +58,13 @@ function scrollEffect(){
 
         //requisita para o browser que vc quer fazer uma coisa quando ele foi pintar a pagina
         let requestAnimationFrame = window.requestAnimationFrame(scrollEffect);
-        console.log(scrollPosition);
+
         //condições para fazer os elementos aparecerem de acordo com a posição do scrollPosition
         if (scrollPosition >= 250 && scrollPosition < 500){
             hidden[0].classList.add("main-title")
             hidden[1].classList.add("scroll-effect");
         } else if (scrollPosition >= 1000 && scrollPosition < 1200) {
             hidden[2].classList.add("row-reverse", "scroll-effect");
-            console.log("teste");
         } else if (scrollPosition >= 1500 && scrollPosition < 1800){
             hidden[3].classList.add("scroll-effect");
         } else if (scrollPosition >= 2150 && scrollPosition < 2500){
