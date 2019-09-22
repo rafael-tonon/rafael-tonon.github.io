@@ -1,9 +1,11 @@
+/* TypeWriter Animation */
 @keyframes type-cursor {
     0% {opacity: 1;}
     50% {opacity: 0;}
     100% {opacity: 1;}
  }
 
+/* Srolling effect */
  @keyframes scrolling {
     0% {
         opacity: 0;
@@ -16,6 +18,7 @@
     }
 }
 
+/* Scrolling effect for h1 main tag */
 @keyframes slide-title {
     0% {
         opacity: 0;

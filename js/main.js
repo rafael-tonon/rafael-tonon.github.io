@@ -64,10 +64,8 @@ function scrollEffect(){
         } else if (scrollPosition >= 1000 && scrollPosition < 1200) {
             hidden[2].classList.add("row-reverse", "scroll-effect");
         } else if (scrollPosition >= 1500 && scrollPosition < 1800){
-            hidden[3].classList.add("scroll-effect");
-        } else if (scrollPosition >= 2150 && scrollPosition < 2500){
-            hidden[4].classList.add("scroll-effect", "soon");
-        } else if (scrollPosition > 2500){
+            hidden[3].classList.add("scroll-effect", "soon");
+        } else if (scrollPosition > 2150){
             //desativa a requisição de animation frames para liberar processamento
             window.cancelAnimationFrame(requestAnimationFrame);
         }
