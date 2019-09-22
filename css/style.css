@@ -90,7 +90,7 @@ header {
 }
 
 
-.kb-cursor-animation::after {
+.kb-cursor-blinking::after {
     content: " ";
     margin: .2em;
     border-left: 4px solid var(--primaryColor-);

@@ -5,41 +5,39 @@ window.onload = e => {
 };
 
 //função para simular digitação no começo da página
-function typeWriter(){
+function typeWriter() {
+    
+    //declaração dos valores que serão escritos no innerHTML
+    const name = "Rafael Tonon";
+    const title = "Web Dev";
     //pega a classe dos elementos h1 e p para trocar o innerHTML
-    let typeW = document.getElementsByClassName("typeW");
+    let headerText = document.getElementsByClassName("headerText");
 
     //x e y = valores auxiliares para arrays e loops
     let x=0, y=0;
 
-    //declaração dos novos valores que serão substituidos no innerHTML
-    let name = "Rafael Tonon";
-    let title = "Web Dev";
 
-    //conversão em array para efeito de apagar texto
-    let arrayTitle = title.split("");
-    let titlePop = arrayTitle.pop();
 
-    // setInterval para escrever as letras em um intervalo fixo
-    let typing = setTimeout(function e() {
+    // setTimeou para escrever as letras em um intervalo fixo
+    let timeOutLoop = setTimeout(function typing() {
         if (x < name.length){
-            typeW[0].innerHTML += name[x];
+            headerText[0].innerHTML += name[x];
             x++;
         } else if (y < title.length){
             //remove a border do ::after da tag h1
-            typeW[0].classList.remove("kb-cursor");
+            headerText[0].classList.remove("kb-cursor");
             //adiciona a border do ::after na tag p
-            typeW[1].classList.add("kb-cursor")
-            typeW[1].innerHTML += title[y];
+            headerText[1].classList.add("kb-cursor")
+            headerText[1].innerHTML += title[y];
             y++;
         } else {
-            //quando toda a váriavel é escrita então remove a border fixa e troca por uma animação da border piscando
-            typeW[1].classList.remove("kb-cursor");
-            typeW[1].classList.add("kb-cursor-animation");
-            //fecha o setInterval
-            clearTimeout(typing);
+            //após a variavel for escrita remove a border-right fixa e troca por uma animação da border-right piscando
+            headerText[1].classList.remove("kb-cursor");
+            headerText[1].classList.add("kb-cursor-blinking");
+            //fecha o setTimeout
+            clearTimeout(timeOutLoop);
         }
-        setTimeout(e, 150);
+        setTimeout(typing, 150);
     }, 150);
 }
 
@@ -50,10 +48,10 @@ function scrollEffect(){
     const scrollPosition = window.scrollY;
     
 
-    //pega os elementos escondidos
-    let hidden = document.getElementsByClassName("hidden");
+    //pegar os elementos escondidos
+    const hidden = document.getElementsByClassName("hidden");
     
-    //só ativar este script em aparelhos com width maiores. Pesquisar para ver se tem como detectar qual o tipo de aparelho para melhor customização de performance
+    //só ativar este script em aparelhos com width maiores.
     if (screen.width > 1300){
 
         //requisita para o browser que vc quer fazer uma coisa quando ele foi pintar a pagina
