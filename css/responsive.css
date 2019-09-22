@@ -132,7 +132,7 @@
             }
 
             /* Laptop large screen */
-            @media (min-width: 1300px) and (orientation: landscape){              
+            @media (min-width: 1400px) and (orientation: landscape){              
                 .hidden {
                     opacity: 0;
                 }
